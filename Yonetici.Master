@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Yonetici.master.cs" Inherits="_2012903044_Kursat_Kilitci.Yonetici" %>
+
+<%@ Register Src="UserControl/YonetimMenu.ascx" TagName="YonetimMenu" TagPrefix="uc1" %>
+<%@ Register Src="~/UserControl/uyegiris.ascx" TagPrefix="uc1" TagName="uyegiris" %>
+
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="AnaStil.css" rel="stylesheet" type="text/css" />
+
+    <style type="text/css">
+        .auto-style1 {
+            width: 1023px;
+        }
+    </style>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <table class="tablo">
+                    <tr>
+                        <td class="cerceve">
+                            <img src="Resimler/ödevresim.jpg" / class="auto-style1"></td>
+                    </tr>
+                    <tr>
+                        <td class="cerceve">
+                            <uc1:uyegiris runat="server" ID="uyegiris" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cerceve">
+                            <uc1:YonetimMenu ID="YonetimMenu1" runat="server" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tabloicerik cerceve">
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="cerceve">DİPNOT </td>
+                    </tr>
+                </table>
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,35 @@
+﻿body {
+    font-family:'Times New Roman';
+    font-size: 16px;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.tablo {
+    width:100%;
+}
+
+.cerceve {
+    border: 2px dashed darkgray;
+    border-radius: 5px 9px 9px 6px;
+    background-color: #c6bbfb;
+    padding:5px;
+}
+.tabloicerik{
+    vertical-align:top;
+}
+
+.tablomenu{
+    width:140px;
+    vertical-align:top;
+}
+table {
+    border: 2px solid #353030;
+    border-radius: 5px 9px 9px 6px;
+}
+td {
+    border: 1px solid #000000;
+    padding: 5px;
+}
+#HyperLink6 {
+    border: 2px solid #353030;
+}

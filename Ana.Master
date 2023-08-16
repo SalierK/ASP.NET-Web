@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Ana.Master.cs" Inherits="_2012903044_Kursat_Kilitci.Site1"%>
+
+<%@ Register Src="~/UserControl/Menu.ascx" TagPrefix="uc1" TagName="Menu" %>
+<%@ Register Src="~/UserControl/uyegiris.ascx" TagPrefix="uc1" TagName="uyegiris" %>
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="AnaStil.css" rel="stylesheet" type="text/css" />
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table class="tablo" >
+                <tr>
+                    <td colspan="2" class="cerceve">
+                        <img src="Resimler/ödevresim.jpg" / style="width: 985px">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="cerceve">
+                        <uc1:uyegiris runat="server" id="uyegiris" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tablomenu cerceve">
+                        <uc1:Menu runat="server" id="Menu" />
+                    </td>
+                    <td class="tabloicerik cerceve">
+                         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                         </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="cerceve">
+                        DİPNOT
+                    </td>
+                </tr>
+            </table>
+           
+        </div>
+    </form>
+</body>
+</html>
